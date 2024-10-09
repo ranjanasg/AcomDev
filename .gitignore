@@ -1,0 +1,6 @@
+# .NET Core project-specific files
+bin
+obj
+.user
+.suo
+.csproj.user
