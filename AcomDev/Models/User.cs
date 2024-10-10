@@ -1,8 +1,12 @@
-﻿namespace AcomDev.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AcomDev.Models
 {
     public class User
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        public int CompanyId { get; set; }
         public string Title { get; set; }
         public string Name { get; set; }
         public string DRTeamName { get; set; }

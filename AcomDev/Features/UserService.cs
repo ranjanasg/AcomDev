@@ -33,7 +33,7 @@ namespace AcomDev.Features
         {
             using var connection = _context.CreateConnection();
 
-            const string sql = """ INSERT INTO Users (CompanyId, Name, MobileNumber, Email, Password, Title, DrTeamName, DrSkill, Address, Street, City, ZipCode, Role, Country) VALUES (@companyId, @name, @mobilenumber, @email, @password, @title, @drteamname, @drskill, @address, @street, @city, @zipcode, @role, @country) """;
+            const string sql = """ INSERT INTO users (CompanyId, Name, MobileNumber, Email, Password, Title, DrTeamName, DrSkill, Address, Street, City, ZipCode, Role, Country) VALUES (@companyId, @name, @mobilenumber, @email, @password, @title, @drteamname, @drskill, @address, @street, @city, @zipcode, @role, @country) """;
 
             var result = await connection.ExecuteAsync(sql, user);
             return result;
