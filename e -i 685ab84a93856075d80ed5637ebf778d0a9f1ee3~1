@@ -1,0 +1,43 @@
+[33mcommit 685ab84a93856075d80ed5637ebf778d0a9f1ee3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 52db873 fc24045
+Author: ranjana_g <ranjana_g@trigent.com>
+Date:   Thu Oct 10 15:48:58 2024 +0530
+
+    Azure Test
+
+[33mcommit fc24045ef034fd686948577b4ad4fcabb9901027[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: ranjanasg <ranjanamythra@gmail.com>
+Date:   Thu Oct 10 15:45:53 2024 +0530
+
+    Update appsettings.json
+
+[33mcommit 52db8738c7068dc5b7db0640cd6bc11c10fbed5b[m[33m ([m[1;32mMaster[m[33m)[m
+Author: ranjana_g <ranjana_g@trigent.com>
+Date:   Thu Oct 10 15:26:11 2024 +0530
+
+    To Azure
+
+[33mcommit b1858784bb1c3d2d8140c56ac874895af4d0d2c1[m
+Merge: a68a271 f909913
+Author: ranjana_g <ranjana_g@trigent.com>
+Date:   Thu Oct 10 15:20:48 2024 +0530
+
+    ToAzure
+
+[33mcommit a68a2710de24f263e41206635c24e96313f333e4[m
+Author: ranjana_g <ranjana_g@trigent.com>
+Date:   Thu Oct 10 15:05:30 2024 +0530
+
+    TO Azure
+
+[33mcommit f909913dc6d222de0980bacbce2a4ad12b609710[m
+Author: ranjanasg <ranjanamythra@gmail.com>
+Date:   Thu Oct 10 12:00:14 2024 +0530
+
+    Add or update the Azure App Service build and deployment workflow config
+
+[33mcommit 79084e5b395cce30c494392fd1f39fc0dc32e6c9[m
+Author: ranjana_g <ranjana_g@trigent.com>
+Date:   Wed Oct 9 23:29:01 2024 +0530
+
+    Initial commit
