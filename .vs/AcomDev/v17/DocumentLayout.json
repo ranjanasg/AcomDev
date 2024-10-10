@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Trigent\\AcomDev\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|d:\\trigent\\acomdev\\acomdev\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|solutionrelative:acomdev\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|d:\\trigent\\acomdev\\acomdev\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|solutionrelative:acomdev\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -27,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|solutionrelative:acomdev\\acomdev.db||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|d:\\trigent\\acomdev\\acomdev\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|solutionrelative:acomdev\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|d:\\trigent\\acomdev\\acomdev\\data\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C4C96ED-511F-462E-8747-724E5AD81157}|AcomDev\\AcomDev.csproj|solutionrelative:acomdev\\data\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AcomDev.http",
               "DocumentMoniker": "D:\\Trigent\\AcomDev\\AcomDev\\AcomDev.http",
               "RelativeDocumentMoniker": "AcomDev\\AcomDev.http",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AcomDev.db",
               "DocumentMoniker": "D:\\Trigent\\AcomDev\\AcomDev\\AcomDev.db",
               "RelativeDocumentMoniker": "AcomDev\\AcomDev.db",
@@ -102,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Trigent\\AcomDev\\AcomDev\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AcomDev\\appsettings.Development.json",
@@ -114,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Trigent\\AcomDev\\AcomDev\\appsettings.json",
               "RelativeDocumentMoniker": "AcomDev\\appsettings.json",
@@ -127,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Trigent\\AcomDev\\AcomDev\\Features\\UserService.cs",
               "RelativeDocumentMoniker": "AcomDev\\Features\\UserService.cs",
@@ -139,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Trigent\\AcomDev\\AcomDev\\Program.cs",
               "RelativeDocumentMoniker": "AcomDev\\Program.cs",
@@ -151,15 +151,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Trigent\\AcomDev\\AcomDev\\Models\\User.cs",
               "RelativeDocumentMoniker": "AcomDev\\Models\\User.cs",
               "ToolTip": "D:\\Trigent\\AcomDev\\AcomDev\\Models\\User.cs",
               "RelativeToolTip": "AcomDev\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T05:25:40.734Z"
+              "WhenOpened": "2024-10-09T05:25:40.734Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
