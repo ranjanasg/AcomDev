@@ -30,6 +30,9 @@ jobs:
           name: .net-app
           path: ${{env.GITHUB_WORKSPACE}}/AcomDev
 
+      - name: List output files
+        run: dir "${{env.GITHUB_WORKSPACE}}/AcomDev"
+
   deploy:
     runs-on: windows-latest
     needs: build
