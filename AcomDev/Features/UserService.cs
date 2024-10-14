@@ -49,11 +49,22 @@ namespace AcomDev.Features
 
             user.Password = SHApassword;
             user.temppass = newpassword;
-            const string sql = """ INSERT INTO users (CompanyId, Title, Name, MobileNumber, Email, Password, Role, DrTeamName, DrSkill, Address, Street, City, ZipCode, Country, EmergencyContactName, EmergencyContactEmail, EmergencyContactPhone, EmergencyContactRelationship, temppass) VALUES (@companyId, @title, @name, @mobilenumber, @email, @password, @role, @drteamname, @drskill, @address, @street, @city, @zipcode, @country, @emergencyContactName, @emergencyContactEmail, @emergencyContactPhone, @emergencyContactRelationship, @temppass) """;
+            const string sql = """ INSERT INTO users (CompanyId, Title, Name, MobileNumber, Email, Password, Role, DrTeamName, DrSkill, Address, Street, City, State, ZipCode, Country, EmergencyContactName, EmergencyContactEmail, EmergencyContactPhone, EmergencyContactRelationship, temppass) VALUES (@companyId, @title, @name, @mobilenumber, @email, @password, @role, @drteamname, @drskill, @address, @street, @city, @state, @zipcode, @country, @emergencyContactName, @emergencyContactEmail, @emergencyContactPhone, @emergencyContactRelationship, @temppass) """;
 
             var result = await connection.ExecuteAsync(sql, user);
             SendMail(user.Email, user.Name, newpassword);
 
+            return result;
+        }
+
+        public async Task<int> UpdateUserAsync(UpdateUser updateuser)
+        {
+            using var connection = _context.CreateConnection();
+
+            const string sql = """ UPDATE users Set Title=@title, Name=@name, MobileNumber=@mobilenumber, Email=@email, Address=@address, Street=@street, City=@city, State=@state, ZipCode=@zipcode, Country=@country, IsActive=@isactive Where Id=@id """;
+
+            var result = await connection.ExecuteAsync(sql, updateuser);
+            
             return result;
         }
 

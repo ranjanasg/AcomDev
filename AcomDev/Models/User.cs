@@ -26,6 +26,7 @@ namespace AcomDev.Models
         public string? EmergencyContactEmail { get; set;} = string.Empty; 
         public string? EmergencyContactPhone { get;set;} = string.Empty;
         public string? EmergencyContactRelationship { get; set; } = string.Empty;
+        public bool? IsActive { get; set; }
 
         [JsonIgnore]
         public string? temppass { get; set; } = string.Empty;

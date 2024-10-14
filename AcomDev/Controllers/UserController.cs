@@ -56,5 +56,12 @@ namespace AcomDev.Controllers
             var createdUser = await _userService.AddUserAsync(user);
             return Ok(createdUser);
         }
+
+        [HttpPut("update")]
+        public async Task<IActionResult> UpdateUser([FromBody] UpdateUser updateUser)
+        {
+            var updatedUser = await _userService.UpdateUserAsync(updateUser);
+            return Ok(updatedUser);
+        }
     }
 }
