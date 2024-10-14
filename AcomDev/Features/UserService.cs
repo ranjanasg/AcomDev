@@ -47,9 +47,9 @@ namespace AcomDev.Features
             var newpassword = PasswordGenerator.GenerateRandomPassword(15);
             var SHApassword = ComputeSha256HashWithSalt(newpassword, "AcomDev");
 
-            user.Password = newpassword;
-
-            const string sql = """ INSERT INTO users (CompanyId, Title, Name, MobileNumber, Email, Password, Role, DrTeamName, DrSkill, Address, Street, City, ZipCode, Country, EmergencyContactName, EmergencyContactEmail, EmergencyContactPhone, EmergencyContactRelationship) VALUES (@companyId, @title, @name, @mobilenumber, @email, @password, @role, @drteamname, @drskill, @address, @street, @city, @zipcode, @country, @emergencyContactName, @emergencyContactEmail, @emergencyContactPhone, @emergencyContactRelationship) """;
+            user.Password = SHApassword;
+            user.temppass = newpassword;
+            const string sql = """ INSERT INTO users (CompanyId, Title, Name, MobileNumber, Email, Password, Role, DrTeamName, DrSkill, Address, Street, City, ZipCode, Country, EmergencyContactName, EmergencyContactEmail, EmergencyContactPhone, EmergencyContactRelationship, temppass) VALUES (@companyId, @title, @name, @mobilenumber, @email, @password, @role, @drteamname, @drskill, @address, @street, @city, @zipcode, @country, @emergencyContactName, @emergencyContactEmail, @emergencyContactPhone, @emergencyContactRelationship, @temppass) """;
 
             var result = await connection.ExecuteAsync(sql, user);
             SendMail(user.Email, user.Name, newpassword);
