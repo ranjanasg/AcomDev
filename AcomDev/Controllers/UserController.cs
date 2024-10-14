@@ -14,7 +14,7 @@ namespace AcomDev.Controllers
             _userService = userService;
         }
 
-        [HttpGet]
+        [HttpGet("getusersbycompanyid")]
         public async Task<IActionResult> GetUsersByCompanyId(string CompanyId)
         {
             var users = await _userService.GetUsersByCompanyId(CompanyId);
@@ -39,7 +39,7 @@ namespace AcomDev.Controllers
             }
         }
 
-        [HttpGet("email")]
+        [HttpGet("getuserbyemail")]
         public async Task<IActionResult> GetUserByEmail(string email)
         {
             var user = await _userService.GetUserByEmailAsync(email);
@@ -50,7 +50,7 @@ namespace AcomDev.Controllers
             return Ok(user);
         }
 
-        [HttpPost]
+        [HttpPost("createuser")]
         public async Task<IActionResult> CreateUser([FromBody] User user)
         {
             var createdUser = await _userService.AddUserAsync(user);
