@@ -13,11 +13,30 @@ namespace AcomDev.Controllers
         public UserController(UserService userService) {
             _userService = userService;
         }
+
         [HttpGet]
-        public async Task<IActionResult> GetAllUsers()
+        public async Task<IActionResult> GetUsersByCompanyId(string CompanyId)
         {
-            var users = await _userService.GetAllUsersAsync();
+            var users = await _userService.GetUsersByCompanyId(CompanyId);
             return Ok(users);
+        }        
+
+        [HttpGet("login")]
+        public async Task<IActionResult> Login(string email, string password)
+        {
+            var user = await _userService.GetUserByEmailAsync(email);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            if (user.Password == _userService.ComputeSha256HashWithSalt(password, "AcomDev"))
+            {
+                return Ok(user);
+            }
+            else
+            {
+                return Ok("Invalid password");
+            }
         }
 
         [HttpGet("email")]
