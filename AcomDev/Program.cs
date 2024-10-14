@@ -7,6 +7,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<APIContext>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder.WithOrigins("http://localhost:4200")  // Add your frontend URL here
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -20,6 +29,9 @@ var app = builder.Build();
 
 
 app.UseHttpsRedirection();
+
+// Use CORS Middleware
+app.UseCors("AllowSpecificOrigin");
 
 app.UseAuthorization();
 
